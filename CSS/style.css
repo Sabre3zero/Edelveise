@@ -9,7 +9,7 @@ html, body {
 
 header{
     height: 315px;
-    width: 100%;
+    width: 2560px;
     background-color: blueviolet;
     display: flex;
 }
@@ -21,13 +21,44 @@ header{
     margin-left: 55px;
 }
 
+#searchcats_container{
+    margin-left: 210px;
+    margin-top: 82px;
+}
+
 #search{
     width: 1531px;
     height: 85px;
-    margin-left: 210px;
-    margin-top: 82px;
     border-style: solid;
     border-width: 4px;
     border-color: var(--highlight);
     border-radius: 80px;
+}
+
+#cats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1526px;
+    height: 44px;
+    margin-top: 55px;
+}
+
+#cats p{
+    font-size: 36px;
+}
+
+#personal_menu{
+    width: 303px;
+    height: auto;
+    margin-left: 99px;
+    margin-top: -55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#personal_menu img{
+    width: 68px;
+    height: 68px;
 }
