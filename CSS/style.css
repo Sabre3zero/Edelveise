@@ -1,5 +1,6 @@
 :root{
     --highlight: #0193DE;
+    --border: #ACACAC;
 }
 
 html, body {
@@ -10,8 +11,8 @@ html, body {
 header{
     height: 315px;
     width: 2560px;
-    background-color: blueviolet;
     display: flex;
+    position: sticky;
 }
 
 #logo{
@@ -61,4 +62,52 @@ header{
 #personal_menu img{
     width: 68px;
     height: 68px;
+}
+
+#hor_slider_background{
+    width: 2560px;
+    height: 626px;
+}
+
+#filter{
+    width: 1983px;
+    height: 255px;
+    margin-left: 326px;
+}
+
+#card_container{
+    width: 1978px;
+    height: auto;
+    margin-top: 39px;
+    margin-left: 291px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 174px;
+}
+
+.card{
+    width: 459px;
+    height: 778px;
+    background-color: blueviolet;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--border);
+    display: flex;
+    flex-direction: column;
+}
+
+.card img{
+    width: 459px;
+    height: 469px;
+}
+
+.card_text{
+    width: auto;
+    height: 309px;
+}
+
+.card_text p{
+    font-size: 32px;
+    margin-left: 11px;
 }
