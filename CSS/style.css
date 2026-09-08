@@ -1,0 +1,33 @@
+:root{
+    --highlight: #0193DE;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 315px;
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+}
+
+#logo{
+    width: 251px;
+    height: 187px;
+    margin-top: 35px;
+    margin-left: 55px;
+}
+
+#search{
+    width: 1531px;
+    height: 85px;
+    margin-left: 210px;
+    margin-top: 82px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: var(--highlight);
+    border-radius: 80px;
+}
