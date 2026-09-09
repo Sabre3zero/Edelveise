@@ -3,7 +3,7 @@
     --border: #ACACAC;
 }
 
-html, body {
+* {
     margin: 0;
     padding: 0;
 }
@@ -69,6 +69,11 @@ header{
     height: 626px;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+}
+
 #filter{
     width: 1983px;
     height: 255px;
@@ -89,7 +94,6 @@ header{
 .card{
     width: 459px;
     height: 778px;
-    background-color: blueviolet;
     border-style: solid;
     border-width: 2px;
     border-color: var(--border);
@@ -105,9 +109,24 @@ header{
 .card_text{
     width: auto;
     height: 309px;
+    padding-left: 21px;
 }
 
 .card_text p{
     font-size: 32px;
-    margin-left: 11px;
+}
+
+.add_to_cart{
+    width: 115px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    background-color: var(--highlight);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    border-color: black;
 }
