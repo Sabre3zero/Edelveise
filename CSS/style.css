@@ -12,6 +12,9 @@ header{
     height: 315px;
     width: 2560px;
     display: flex;
+    position: fixed;
+    background-color: white;
+    margin-top: -315px;
 }
 
 #logo{
@@ -68,9 +71,10 @@ header{
     height: 626px;
 }
 
-body{
+main{
     display: flex;
     flex-direction: column;
+    margin-top: 315px;
 }
 
 #filter{
@@ -149,5 +153,6 @@ footer h1{
 }
 
 footer a{
-
+    color: var(--highlight);
+    font-size: 28px;
 }
