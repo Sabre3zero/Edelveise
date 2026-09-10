@@ -12,7 +12,6 @@ header{
     height: 315px;
     width: 2560px;
     display: flex;
-    position: sticky;
 }
 
 #logo{
@@ -110,6 +109,9 @@ body{
     width: auto;
     height: 309px;
     padding-left: 21px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .card_text p{
