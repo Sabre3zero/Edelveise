@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#login-modal{
+    width: 1320px;
+    height: 1600px;
+}
+
+#login-header{
+    width: 1320px;
+}
+
+#login-modal section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
