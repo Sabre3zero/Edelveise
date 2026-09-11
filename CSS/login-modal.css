@@ -1,19 +1,36 @@
-* {
-    margin: 0;
-    padding: 0;
+/* modal.css */
+.modal_step {
+    display: none;
 }
 
-#login-modal{
-    width: 1320px;
-    height: 1600px;
+.modal_step.active {
+    display: block;
+    animation: modal_step_in 0.18s ease-out;
 }
 
-#login-header{
-    width: 1320px;
+@keyframes modal_step_in {
+    from { opacity: 0; transform: translateX(12px); }
+    to   { opacity: 1; transform: translateX(0); }
+}   
+
+.modal_subtitle {
+    color: #666;
+    font-size: clamp(15px, 0.8vw, 20px);
+    margin-bottom: clamp(15px, 1vw, 25px);
 }
 
-#login-modal section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.modal_switch {
+    text-align: center;
+    font-size: clamp(14px, 0.75vw, 18px);
+    color: #666;
+    margin-top: clamp(8px, 0.5vw, 14px);
+}
+
+.modal_switch a {
+    color: var(--highlight, #0193DE);
+    text-decoration: none;
+}
+
+.modal_switch a:hover {
+    text-decoration: underline;
 }

@@ -48,3 +48,23 @@ const products = [
         image: 'data:image/svg+xml,' + encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="459" height="469" viewBox="0 0 459 469"><rect width="459" height="469" fill="#d4e6f1"/><text x="50%" y="50%" font-size="28" text-anchor="middle" fill="#1e4f6b" dy=".3em">PLACEHOLDER IMAGE</text></svg>`)
     }
 ];
+
+const AUTH_CONFIG = {
+    // The SMS code is hardcoded for now. Change here when you wire a real backend.
+    SMS_CODE: '0000',
+
+    // Where each step goes on successful submit.
+    next: {
+        'register-phone': 'register-code',
+        'register-code':  'register-info',
+        'register-info':  null,            // null = close modal, registration done
+        'login-phone':    'login-code',
+        'login-code':     null,            // null = close modal, logged in
+    },
+
+    // The first step when opening as "register" or "login".
+    start: {
+        register: 'register-phone',
+        login:    'login-phone',
+    },
+};

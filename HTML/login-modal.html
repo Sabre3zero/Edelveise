@@ -1,10 +1,93 @@
-<link rel="stylesheet" href="../CSS/login-modal.css">
+<!-- register-modal.html -->
+<div id="auth_modal" class="modal_overlay" aria-hidden="true">
+    <div class="modal_window" role="dialog" aria-modal="true">
+        <button class="modal_close" type="button" aria-label="Закрыть">&times;</button>
 
-<div id="login-modal">
-    <img src="../IMG/modal_head.png" id="login-header">
-    <section>
-        <div class="phone_numer">
-            <p>Номер телефона</p>
-        </div>
-    </section>
+        <!-- STEP: register — phone -->
+        <section class="modal_step" data-step="register-phone">
+            <h2>Регистрация</h2>
+            <p class="modal_subtitle">Введите номер телефона</p>
+            <form class="modal_form" data-form="register-phone">
+                <label>
+                    Телефон
+                    <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+                </label>
+                <button type="submit" class="modal_submit">Получить код</button>
+                <p class="modal_switch">
+                    Уже есть аккаунт? <a href="#" data-goto="login-phone">Войти</a>
+                </p>
+            </form>
+        </section>
+
+        <!-- STEP: register — SMS code -->
+        <section class="modal_step" data-step="register-code">
+            <h2>Регистрация</h2>
+            <p class="modal_subtitle">Введите код из SMS</p>
+            <form class="modal_form" data-form="register-code">
+                <label>
+                    Код
+                    <input type="text" name="code" inputmode="numeric" maxlength="4"
+                           pattern="\d{4}" placeholder="0000" required>
+                </label>
+                <button type="submit" class="modal_submit">Подтвердить</button>
+                <p class="modal_switch">
+                    <a href="#" data-goto="register-phone">← Изменить номер</a>
+                </p>
+            </form>
+        </section>
+
+        <!-- STEP: register — personal info -->
+        <section class="modal_step" data-step="register-info">
+            <h2>Регистрация</h2>
+            <p class="modal_subtitle">Заполните личные данные</p>
+            <form class="modal_form" data-form="register-info">
+                <label>
+                    Фамилия
+                    <input type="text" name="surname" required>
+                </label>
+                <label>
+                    Имя
+                    <input type="text" name="name" required>
+                </label>
+                <label>
+                    Отчество
+                    <input type="text" name="patronymic">
+                </label>
+                <button type="submit" class="modal_submit">Завершить</button>
+            </form>
+        </section>
+
+        <!-- STEP: login — phone -->
+        <section class="modal_step" data-step="login-phone">
+            <h2>Авторизация</h2>
+            <p class="modal_subtitle">Введите номер телефона</p>
+            <form class="modal_form" data-form="login-phone">
+                <label>
+                    Телефон
+                    <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+                </label>
+                <button type="submit" class="modal_submit">Получить код</button>
+                <p class="modal_switch">
+                    Нет аккаунта? <a href="#" data-goto="register-phone">Зарегистрироваться</a>
+                </p>
+            </form>
+        </section>
+
+        <!-- STEP: login — SMS code -->
+        <section class="modal_step" data-step="login-code">
+            <h2>Авторизация</h2>
+            <p class="modal_subtitle">Введите код из SMS</p>
+            <form class="modal_form" data-form="login-code">
+                <label>
+                    Код
+                    <input type="text" name="code" inputmode="numeric" maxlength="4"
+                           pattern="\d{4}" placeholder="0000" required>
+                </label>
+                <button type="submit" class="modal_submit">Войти</button>
+                <p class="modal_switch">
+                    <a href="#" data-goto="login-phone">← Изменить номер</a>
+                </p>
+            </form>
+        </section>
+    </div>
 </div>
