@@ -1,0 +1,27 @@
+.card{
+    width: 459px;
+    height: 778px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--border);
+    display: flex;
+    flex-direction: column;
+}
+
+.card img{
+    width: 459px;
+    height: 469px;
+}
+
+.card_text{
+    width: auto;
+    height: 309px;
+    padding-left: 21px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.card_text p{
+    font-size: 32px;
+}
